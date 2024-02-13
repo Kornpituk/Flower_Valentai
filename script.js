@@ -270,18 +270,20 @@ window.onload = function () {
     }
     if (step === 4) {
       reveal();
+      // เปลี่ยนไปยังหน้า index2.html
+      window.location.href = "/index2/index.html";
       return;
     }
     setTimeout(openBox, stepMinutes[step - 1]);
     step++;
   }
-
++
   init();
 
 };
 
 function reveal() {
-  document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
+  // document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
 
   loop();
 
